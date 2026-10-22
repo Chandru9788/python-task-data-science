@@ -1,0 +1,191 @@
+#Task -- 2
+##IF–ELSE Tasks
+#Check whether a number is Even or Odd
+num = int(input("enter a number :"))
+if num % 2==0:
+    print("even")
+else:
+    print("odd")
+
+#Check whether a person is Eligible or Not Eligible to Vote
+a = int(input("enter a age: "))
+if a >= 18:
+    print("eligible to vote")
+else:
+    print("not eligible to vote ")
+
+#Check whether a number is Positive or Negative
+age =int(input("enter a number"))
+if age >= 18 :
+    print("positive")
+else:
+    print("negative")
+
+#Check whether a student has Passed or Failed based on a mark
+a = int(input("enter a number"))
+if a >= 50:
+    print("passed")
+else:
+    print("falied")
+
+#Check whether a given number is Divisible by 5 or Not.
+a =int(input("enter a number"))
+if a % 5==0:
+    print("yes")
+else:
+    print("not")
+
+##ELIF Tasks
+# Display the grade based on the student's mark.
+mark = int(input("enter a mark"))
+if mark > 90:
+    print("grade a")
+elif mark > 80:
+        print("grade b")
+elif mark > 70:
+    print("grade c")
+         
+else:
+    print("grade ")
+
+#Find the largest of three numbers.
+num =int(input("enter a largest three number"))
+if num ==  69:
+     print("largest first number")
+elif num == 55:
+     print("second largest number ")
+elif num == 50:
+     print("third largest number")
+else:
+     print("lowest number") 
+
+#Create a simple calculator using `+`, `-`, `*`, `/`.
+
+a = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+b = float(input("Enter second number: "))
+if operator == "+":
+    print(a + b)
+elif operator == "-":
+    print(a - b)
+elif operator == "*":
+    print(a * b)
+elif operator == "/":
+    if b != 0:
+        print(a / b)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid operator")
+
+
+     
+#Display the day of the week based on a number (1–7).
+day = int(input("enter a number (1-7):"))
+if  day == 1:
+    print("sunday")
+elif day == 2:
+    print("monday")
+elif day == 3:
+    print("tuesday")
+elif day == 4:
+    print("wednesday")
+elif day == 5:
+    print("thursday")
+elif day == 6:
+    print("friday")
+elif day == 7:
+    print("saturday")
+else:
+    print("no week")
+                    
+#Display the electricity bill category based on units consumed.
+units =int(input("enter a units cousumed"))
+if units <= 100:
+    print("low useage")
+elif units <= 200:
+    print("medium useage")
+elif units <= 300:
+    print("high useage")
+else:
+    print("very high useage")
+
+## NESTED IF–ELSE Tasks
+#Check age and driving licence eligibility.
+
+age = int(input("enter a age "))
+if age>= 18:
+    print("eligible to drive a bike")
+elif age>= 20:
+    print("eligible to drive a car")
+else:
+    print("not eligible")
+    
+#Check username and password for login.
+username = input("enter username: ")
+password = input("enter a password: ")
+if username == "joy" and password == "12345":
+    print("login successful")
+else:
+    print("worng username or password ")
+
+# Check budget and laptop brand before purchasing.
+budget = int(input("enter your budget: "))
+brand = input("enter laptop brand: ")
+if budget >= 50000 and brand == "hp":
+    print("you bye a laptop")
+else:
+    print("you can not bye laptop")
+
+#Check whether a student is eligible for an exam based on attendance, and then check the mark.
+    
+attendance = int(input("enter attendance :"))
+if attendance >= 75:
+    mark = int(input("enter mark :"))
+if mark >= 50:
+    print("eligible and passed")
+else:
+    print("eligible but falied")
+
+
+#Check ATM withdrawal
+pin= 1234
+balance = 30000
+enter_pin =int(input("enter pin: "))
+if enter_pin == pin:
+    amount = int(input("enter withdrawal amount: "))
+    if amount >= balance:
+        print("withdrawal successful")
+else:
+    print("worng pin ")
+
+                 
+pin= 1234
+balance = 30000
+enter_pin =int(input("enter pin: "))
+if enter_pin == pin:
+    amount = int(input("enter withdrawal amount: "))
+    if amount >= balance:
+        print("withdrawal successful")
+        print("remaining balance:")
+else:
+    print("worng pin ")
+
+    
+### Challenge Task
+#Create a Movie Ticket Booking Program
+num = int(input("Enter number of tickets: "))
+if num <= 120:
+    print("Available")
+    age = int(input("Enter your age: "))
+    if age >= 18:
+        print("Allowed")
+        movie = input("Enter movie name: ")
+        if movie == "spiderman":
+            print("Spiderman")
+        else:
+            print("Movie not available")
+    else:
+        print("Not allowed")
+else:
+    print("Movie not available")
