@@ -1,1 +1,1 @@
-# shiny-mam-python-class-task-data-science
+python-class-task-data-science
